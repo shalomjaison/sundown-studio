@@ -3,6 +3,18 @@
     src: url(./NeueHaasDisplayMediu.ttf);
 }
 
+@font-face {
+    font-family: neu;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 200;
+    src: url(./NeueHaasDisplayRoman.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +30,7 @@ html, body {
 #page1 {
     min-height: 100vh;
     width: 100%;
-    background-color: #EFEAE3;
+    background-color: #EEEAE1;
     position: relative;
     padding: 0 2vw;
 }
@@ -107,8 +119,280 @@ html, body {
     font-weight: 600;
 }
 
-#page1 video {
+#hero-shape {
+    position: absolute;
+    height: 36vw;
+    width: 56vw;
+    right: 0;
+    top: 83vh;
+}
+
+#hero-1{
+    height: 100%;
     width: 100%;
-    border-radius: 25px;
-    padding-top: 4vw;
+    background-color: #FE320A;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    position: absolute;
+}
+
+#hero-2{
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#FE320A, #e94221);
+    filter: blur(15px);
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime2;
+    animation-duration: 10s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+}
+
+#hero-3{
+    height: 30vw;
+    width: 30vw;
+    background: linear-gradient(#FE320A, #ef411e);
+    filter: blur(15px);
+    border-radius: 50%;
+    position: absolute;
+    animation-name: anime1;
+    animation-duration: 10s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes anime1 {
+    from{
+        transform: translate(45%, -7%);
+    }
+    to {
+        transform: translate(25%, 3%);
+    }
+}
+
+@keyframes anime2{
+    from{
+        transform: translate(15%, 15%)
+    }
+    to {
+        transform: translate(-2%, 3%);
+    }
+}
+
+
+#page1 video {
+    position: relative;
+    border-radius: 30px;
+    margin-top: 4vw;
+    width: 100%;
+}
+
+#page2 {
+    min-height: 100vh;
+    width: 100%;
+    padding: 8.2vw 0vw;
+    position: relative;
+}
+
+.con {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 11.5s;
+}
+
+#moving-text {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+#moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+#moving-text h1 {
+    font-size: 9vw;
+    display: inline-block;
+}
+
+#circle {
+    height: 70px;
+    width: 70px;
+    background-color: #FE320A;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0.8vw 2vw;
+}
+
+@keyframes move{
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+#page2-bottom {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 6vw;
+}
+
+#page2-bottom h1{
+    font-size: 4.2vw;
+    line-height: 4vw;
+    width: 63%;
+    margin-top: 2.8vw;
+    z-index: 10;
+}
+
+#bottom-part2 img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+#bottom-part2 {
+    width: 22%;
+    margin-top: 23.9vw;
+    margin-right: 1vw;
+}
+
+#bottom-part2 p {
+    font-weight: 200;
+    margin-top: 3.08vw;
+}
+
+#hero-4 {
+    height: 32vw;
+    width: 32vw;
+    background: linear-gradient(to top, #FE320A, #FF601B);
+    filter: blur(20px);
+    border-radius: 50%;
+    position: absolute;
+}
+
+#hero-5 {
+    height: 32vw;
+    width: 32vw;
+    background: linear-gradient(to top, #FE320A, #FF601B);
+    filter: blur(30px);
+    border-radius: 50%;
+    animation-name: anime1;
+    animation-duration: 5s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: absolute;
+}
+
+@keyframes anime1 {
+    from{
+        transform: translate(15%, -8%);
+    }
+    to {
+        transform: translate(-5%, 8%);
+    }
+}
+
+#bottom-part3 {
+    position: absolute;
+    top: 59%;
+    left: 27%;
+}
+
+#page3 {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+.list-item {
+    height: 15vh;
+    width: 100%;
+    /* border-top: 1px solid #fcfbfb; */
+    border-bottom: 1px solid #cacaca;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2vw;
+    overflow-y: hidden;
+}
+
+
+.list-item .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: orange;
+    position: absolute;
+    left: 0;
+    top: -100%;
+    transition: all ease 0.3s;
+}
+
+.list-item:hover .overlay {
+    top: 0;
+}
+
+.city {
+    position: relative;
+    overflow: hidden;
+    height: 3vw;
+}
+
+.text {
+    display: block;
+    transition: transform 0.4s ease;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.text.top{
+    transform: translateY(0%);
+}
+
+.text.bottom {
+    transform: translateY(100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.list-item:hover .text.top{
+    transform: translateY(-100%);
+}
+
+.list-item:hover .text.bottom {
+    transform: translateY(0%);
+}
+
+.hover-img {
+    position: fixed;
+    width: 17vw;
+    pointer-events: none;
+    transform: translate(5%, 5%);
+    z-index: 9999;
+    background-size:cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    filter: saturate(200%);
+    height: 60vh;
 }
