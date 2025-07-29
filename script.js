@@ -27,10 +27,12 @@ listItems.forEach(item => {
         const img = item.getAttribute('data-img');
         hoverImg.style.backgroundImage = `url(${img})`
         hoverImg.style.opacity = 1;
+        // hoverImg.style.scale = 1;
 
     });
     item.addEventListener('mouseleave', () => {
-        hoverImg.style.opacity = 0
+        hoverImg.style.opacity = 0;
+        // hoverImg.style.scale = 0;
     })
 })
 
