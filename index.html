@@ -6,10 +6,25 @@
     <title>Sundown Studio</title>
     <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="header">
+        <h1>Environment</h1>
+        <h1>Experiences</h1>
+        <h1>Content</h1>
+    </div>
     <div id="main">
+        <div id="menu-drop">
+            <div id="drop-div1">
+                <div id="cont">
+                    <h2>WORK</h2>
+                    <h2>STUDIO</h2>
+                    <h2>CONTACT</h2>
+                </div>
+            </div>
+        </div>
         <div id="page1">
             <div id="nav">
                 <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg" alt="sundown-logo">
@@ -18,6 +33,9 @@
                     <h4><a href="#">Studio</a></h4>
                     <h4><a href="#">Contact</a></h4>
                 </div>
+                <h3 id="menu">
+                    Menu
+                </h3>
             </div>
             <div id="center">
                 <div id="left">
@@ -86,49 +104,49 @@
                 <h4>FEATURED PROJECTS</h4>
             </div>
             <div class="container">
-                <div class="list-item" data-img="https://images.unsplash.com/photo-1701001308648-7b731a52b8d7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="list-item" data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1733_Nike_HOI_50th_SU22_FL1_5388.webp">
                     <div class="overlay"></div>
                     <div class="project">
                         <span class="text top">Makers Studio HOI</span>
                         <span class="text bottom">Makers Studio HOI</span>
                     </div>
                 </div>
-                <div class="list-item" data-img="https://images.unsplash.com/photo-1700975928909-da4a46227a47?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw0fHx8ZW58MHx8fHx8">
+                <div class="list-item" data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16f4_Copy%20of%20Nike_Soho_50th_SU22_FL1_6176.webp">
                     <div class="overlay"></div>
                     <div class="project">
                         <span class="text top">50th Anniversary</span>
                         <span class="text bottom">50th Anniversary</span>
                     </div>
                 </div> 
-                <div class="list-item" data-img="https://images.unsplash.com/photo-1701077137611-9be394bf62f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="list-item" data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1712_AM704009-p-1600.webp">
                     <div class="overlay"></div>
                     <div class="project">
                         <span class="text top">NYFW Popup</span>
                         <span class="text bottom">NYFW Popup</span>
                     </div>
                 </div> 
-                <div class="list-item" data-img="https://images.unsplash.com/photo-1701014159309-4a8b84faadfe?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOXx8fGVufDB8fHx8fA%3D%3D">
+                <div class="list-item" data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16c5_Copy%20of%20Nike_Soho_AMD21_0781_LORES.webp">
                     <div class="overlay"></div>
                     <div class="project">
                         <span class="text top">Air Force 1 2021</span>
                         <span class="text bottom">Air Force 1 2021</span>
                     </div>
                 </div> 
-                <div class="list-item" data-img="https://images.unsplash.com/photo-1700924546093-f914fd5b8814?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyOHx8fGVufDB8fHx8fA%3D%3D">
+                <div class="list-item" data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b163b_Copy-of-IMG_1180.webp">
                     <div class="overlay"></div>
                     <div class="project">
                         <span class="text top">SOHO NYC</span>
                         <span class="text bottom">SOHO NYC</span>
                     </div>
                 </div> 
-                <div class="list-item" data-img="https://images.unsplash.com/photo-1700601437860-e66da79cf6d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1OXx8fGVufDB8fHx8fA%3D%3D">
+                <div class="list-item" data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1733_Nike_HOI_50th_SU22_FL1_5388.webp">
                     <div class="overlay"></div>
                     <div class="project">
                         <span class="text top">SOHO 2023</span>
                         <span class="text bottom">SOHO 2023</span>
                     </div>
                 </div> 
-                <div class="list-item" data-img="https://images.unsplash.com/photo-1700769025506-6c3dcb9ec9b7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw2OXx8fGVufDB8fHx8fA%3D%3D">
+                <div class="list-item" data-img="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b169f_Copy%2520of%2520211023_NikeCHI_PlayNewKids_Beauty-03-p-1600.webp">
                     <div class="overlay"></div>
                     <div class="project">
                         <span class="text top">Play New Kidvision</span>
@@ -136,10 +154,72 @@
                     </div>
                 </div>     
                 <div class="hover-img"></div>
+                <div id="mob-elem">
+                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b169f_Copy%2520of%2520211023_NikeCHI_PlayNewKids_Beauty-03-p-1600.webp" alt="">
+                    <h2>Play New Kidvision</h2>
+                </div>
+                <div id="mob-elem">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b163b_Copy-of-IMG_1180.webp" alt="">
+                        <h2>SOHO NYC</h2>
+                </div>
+                <div id="mob-elem">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1733_Nike_HOI_50th_SU22_FL1_5388.webp" alt="">
+                        <h2>Makers Studio HOI</h2>
+                </div>
+                <div id="mob-elem">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1733_Nike_HOI_50th_SU22_FL1_5388.webp" alt="">
+                        <h2>SOHO 2023</h2>
+                </div>
+                <div id="mob-elem">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1712_AM704009-p-1600.webp" alt="">
+                        <h2>NYFW Popup</h2>
+                </div>
+                <div id="mob-elem">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16c5_Copy%20of%20Nike_Soho_AMD21_0781_LORES.webp" alt="">
+                        <h2>Air Force 1 2021</h2>
+                </div>
+                <div id="mob-elem">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b16f4_Copy%20of%20Nike_Soho_50th_SU22_FL1_6176.webp" alt="">
+                        <h2>50th Anniversary</h2>
+                </div>
             </div>
         </div>
-        <div id="page4"></div>
-        <div id="page5"></div>
+        <div id="page4">
+            <div id="title">
+                <div id="circle2"></div>
+                <h4>WHO WE WORK WITH</h4>
+            </div>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15ff_Nike.svg" alt="">
+                        <p>Retained Production support across retail and events in NY, CHI, LA. Creative Design, Design Management, Production/Project Management, and execution of work from concept to installation across the Country.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1600_Converse.svg" alt="">
+                        <p>Creative Concepting, Design, Design Management, Project Management, and execution of work from concept to installation across the Country. Cross functional communication and management of third party partners.</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fd_Arc%E2%80%99teryx.svg" alt="">
+                    <p>Production and design along with install oversight and execution support for the SoHo store opening on Broadway St, New York. Also working on creative and production work for a new store opening in Glendale, California.</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fe_Hunter.svg" alt="">
+                    <p>Design and Production partner for Hunter Holiday 2022 Pop-in at Nordstrom 57th St, New York, including activations in Women’s, Men’s and Kid’s zones. Thirty-five (35) additional smaller take-downs in Nordstrom stores across the US. Concept design for Holiday boot customization events in stores across winter 2022.</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1601_MediaLink.svg" alt="">
+                    <p>Creative, Design, and Production Partner for 2023 CES. Scope Included creation of Branding Identity, Assets, and Digital Content, Design, Production design, Production oversight and Installation of client activations for IBM, Delta, Instacart, and more.</p>
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1602_AfterPay.svg" alt="">
+                    <p>Creative, Design, and Production Partner for 2022 NY Fashion Week Pop-Up space. In Partnership with B-Reel scope including creation of Final Design, Design Assets, 3D Renders, Production design, Production/Partner oversight and creation of a two (2) story pop-up for Afterpay’s clients such as Crocs, JD Sports, Container Store, &amp; Revolve.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="custom-cursor">← →</div>
+    <div id="page5"></div>
     </div>
     <div id="footer">
         <div id="footer-blur">
@@ -169,6 +249,7 @@
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>

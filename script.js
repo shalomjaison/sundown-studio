@@ -50,11 +50,63 @@ function animate() {
     hoverImg.style.top = `${currentY}px`;
     hoverImg.style.transform = `translate(5%, 5%) skew(${skewX}deg, ${skewY}deg)`;
 
+    customCursor.style.left = `${currentX}px`;
+    customCursor.style.top = `${currentY}px`;
+
     console.log(`mouseY: ${mouseY}, scrollY: ${scrollY}, currentY: ${currentY}`);
     requestAnimationFrame(animate);
 
 
 }
 
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: "auto",
+  centeredSlides: false,
+  spaceBetween: 30,
+});
+
+document.addEventListener("mousemove", (e) => {
+  if (e.target.closest(".swiper")) {
+    customCursor.style.transform = "translate(-50%, -50%) scale(1)";
+  } else {
+    customCursor.style.transform = "translate(-50%, -50%) scale(0)";
+  }
+});
+
+const customCursor = document.getElementById("custom-cursor");
+const swiperElem = document.querySelector(".swiper")
+
+swiperElem.addEventListener("mousedown", () => {
+  customCursor.style.transform = "translate(-50%, -50%) scale(0.8)";
+});
+swiperElem.addEventListener("mouseup", () => {
+  customCursor.style.transform = "translate(-50%, -50%) scale(1)";
+});
+
+const menu = document.querySelector("#nav h3");
+const drop = document.querySelector("#menu-drop");
+const navimg = document.querySelector("#nav img");
+var flag = 0;
+
+menu.addEventListener("click", () => {
+  console.log("CLICKED MENU");
+  if (flag === 0) {
+    drop.style.top = `0%`;
+    drop.classList.add("active");  // ⬅️ Important
+    navimg.style.opacity = 0;
+    flag = 1;
+  } else {
+    drop.style.top = `-100%`;
+    drop.classList.remove("active"); // ✅ This was missing
+    navimg.style.opacity = 1;
+    flag = 0;
+  }
+});
+
+var header = document.querySelector("#header");
+setTimeout(() => {
+  header.style.top = "-100%"
+}, 4300)
 
 animate()
