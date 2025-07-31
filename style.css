@@ -837,7 +837,7 @@ h4 {
     }
 
     #page2 {
-        min-height: 84.2vh;
+        /* min-height: 84.2vh; */
         width: 100%;
         padding: 8.2vw 0vw;
         position: relative;
