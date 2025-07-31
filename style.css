@@ -806,11 +806,13 @@ h4 {
     }
 
     #left h3 {
+        position: relative;
         padding-top: 0vw;
         width: 80%;
         font-size: 5vw;
         font-weight: 600;
         line-height: 6vw;
+        z-index: 20;
     }
 
     #right h1{
