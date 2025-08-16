@@ -503,7 +503,7 @@ h4 {
 }
 
 #page5 {
-    height: 110vh;
+    min-height: 190vh;
     width: 100%;
 }
 
@@ -710,8 +710,8 @@ h4 {
 }
 
 #header h1 {
-    color: transparent;
     font-size: 7vw;
+    color: transparent;
     background: linear-gradient(orange, orangered);
     -webkit-background-clip: text;
     transition: all ease 0.7s;
