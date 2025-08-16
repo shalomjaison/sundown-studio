@@ -446,6 +446,8 @@ h4 {
     width: 100%;
     background-color: #EFEAE3;
     padding: 8.1vw 0vw;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;   
 }
 
 #page4 #title {
@@ -503,7 +505,7 @@ h4 {
 }
 
 #page5 {
-    min-height: 190vh;
+    min-height: 180vh;
     width: 100%;
 }
 
